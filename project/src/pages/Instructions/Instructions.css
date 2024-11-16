@@ -1,0 +1,140 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.instructions h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.instruction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.instruction-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 2rem; /* Add margin between cards */
+    opacity: 0; /* Start with hidden opacity */
+}
+
+/* Alternating background colors */
+.bg-light {
+    background-color: #ffffff;
+}
+
+.bg-dark {
+    background-color: #f9f9f9;
+}
+
+.instruction-item img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.instruction-item p {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    flex: 1;
+    margin: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #45a049;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+    margin-top: 3rem;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.instruction-item.show {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .instructions h1 {
+        font-size: 2.2rem;
+    }
+    
+    .instruction-item {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .instruction-item img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Set all images to have a consistent height */
+.uniform-image {
+    height: 200px; /* Set the height you prefer */
+    width: auto;   /* Width adjusts to maintain aspect ratio */
+    object-fit: contain; /* Ensures the entire image fits within the height */
+  }
+  
+  /* Optional: If images are inside a container, ensure they stay centered */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

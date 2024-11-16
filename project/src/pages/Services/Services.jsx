@@ -1,28 +1,28 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import { FaShieldAlt, FaHeartbeat, FaBell, FaGraduationCap } from 'react-icons/fa';
+import { FaAmbulance, FaClipboardList, FaBrain, FaRobot } from 'react-icons/fa'; // Import relevant icons
 import './Services.css';
 
 function Services() {
   const services = [
     {
-      icon: <FaShieldAlt />,
+      icon: <FaAmbulance />,
       title: "Emergency Response",
       description: "Receive immediate assistance and support in emergencies, available anytime and anywhere.",
     },
     {
-      icon: <FaHeartbeat />,
+      icon: <FaClipboardList />,
       title: "Personal Management",
       description: "Manage your tasks and set reminders with our personalized services.",
     },
     {
-      icon: <FaBell />,
+      icon: <FaBrain />,
       title: "Mental Well-Being",
       description: "Get tailored recommendations based on your test scores to enhance your mental well-being.",
     },
     {
-      icon: <FaGraduationCap />,
+      icon: <FaRobot />,
       title: "Bot for You",
       description: "Interact with our chatbot for convenient assistance and support.",
     },
@@ -52,3 +52,4 @@ function Services() {
 }
 
 export default Services;
+

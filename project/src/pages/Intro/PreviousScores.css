@@ -1,0 +1,97 @@
+/* Container styling */
+.previous-scores-container {
+    
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(135deg, #e0f7fa, #ede7f6);
+    min-height: 100vh;
+  }
+  
+  /* Heading styling */
+  .previous-scores-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #374151;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Back button styling */
+  .back-button {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #1e40af;
+    transform: translateY(-3px);
+  }
+  
+  /* Loading message */
+  .loading {
+    font-size: 1.25rem;
+    color: #6b7280;
+  }
+  
+  /* No scores found message */
+  .no-scores-message {
+    font-size: 1.25rem;
+    color: #9ca3af;
+    text-align: center;
+  }
+  
+  /* Grid styling for the score cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  /* Score card styling */
+  .score-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .score-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  /* Score details */
+  .score-card h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 10px;
+  }
+  
+  .score-details p {
+    font-size: 1.125rem;
+    color: #4b5563;
+    margin-bottom: 8px;
+  }
+  
+  .score-details span {
+    font-weight: 700;
+    color: #2563eb;
+  }
+  
+  /* Date styling */
+  .score-date {
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+  

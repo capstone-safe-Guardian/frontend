@@ -72,6 +72,8 @@ const Register = () => {
   };
 
   return (
+    <>
+    <div><Navbar/></div>
     <div className="min-h-screen flex justify-center items-center">
   <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-xl">
     <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Create Your Account</h2>
@@ -180,6 +182,7 @@ const Register = () => {
   </div>
 </div>
 
+    </>
   );
 };
 

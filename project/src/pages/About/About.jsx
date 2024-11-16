@@ -8,37 +8,34 @@ function About() {
     <div className="about-page">
       <Navbar />
       <div className="about-container">
-        <h1 className="about-title">About Safe Gaurdian</h1>
+        <h1 className="about-title">About Safe Guardian</h1>
         <div className="about-content">
           <section className="about-section fade-in">
             <h2>Our Mission</h2>
             <p>
-              Safe Gaurdian is dedicated to empowering individuals to live safer, healthier lives. Our mission is to provide innovative solutions that enhance personal safety and well-being, ensuring peace of mind for our users and their loved ones.
+              Safe Guardian is dedicated to empowering individuals to live safer, healthier lives. Our mission is to provide innovative solutions that enhance personal safety and well-being, ensuring peace of mind for our users and their loved ones.
             </p>
           </section>
           <section className="about-section fade-in">
             <h2>Our Vision</h2>
             <p>
-              We envision a world where everyone feels secure and confident in their daily lives, supported by cutting-edge technology and compassionate care. Safe Gaurdian strives to be at the forefront of personal safety and wellness, constantly innovating to meet the evolving needs of our community.
+              We envision a world where everyone feels secure and confident in their daily lives, supported by cutting-edge technology and compassionate care. Safe Guardian strives to be at the forefront of personal safety and wellness, constantly innovating to meet the evolving needs of our community.
             </p>
           </section>
           <section className="about-section fade-in">
             <h2>Our Values</h2>
             <ul className="values-list">
               <li>
-                <span className="value-icon ">🛡️</span>
-                {/* <strong>Safety First:</strong> */}
-                 We prioritize the safety and security of our users above all else.
+                <span className="value-icon">🛡️</span>
+                We prioritize the safety and security of our users above all else.
               </li>
               <li>
-                <span className="value-icon ">💡</span>
-                {/* <strong>Innovation:</strong> */}
-                 We continuously strive to develop new and improved ways to protect and support our community.
+                <span className="value-icon">💡</span>
+                We continuously strive to develop new and improved ways to protect and support our community.
               </li>
               <li>
-                <span className="value-icon ">💪</span>
-                {/* <strong>Empowerment:</strong> */}
-                 We believe in giving people the tools and knowledge they need to take control of their own safety and well-being.
+                <span className="value-icon">💪</span>
+                We believe in giving people the tools and knowledge they need to take control of their own safety and well-being.
               </li>
             </ul>
           </section>

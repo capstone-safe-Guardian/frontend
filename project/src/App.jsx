@@ -11,6 +11,11 @@ import Home1 from './pages/Home/Home1';
 import Emergency from './pages/Emergency/Emergency';
 import MoodTracker from './pages/MoodTracker/MoodTracker';
 import MoodReport from './pages/MoodTracker/MoodReport';
+import TaskDashboard from './pages/Task-Manager/TaskDashboard';
+import Test from './pages/Test/Test';
+import Instructions from './pages/Instructions/Instrucions';
+import Intro from './pages/Intro/Intro';
+import PreviousScores from './pages/Intro/PreviousScores';
 
 
 function App() {
@@ -29,6 +34,11 @@ function App() {
         <Route path="/emergency" element={<Emergency/>}></Route>
         <Route path="/moodtracker" element={<MoodTracker/>}></Route>
         <Route path="/previousreports" element={<MoodReport/>}></Route>
+        <Route path="/tasks" element={<TaskDashboard/>}></Route>
+        <Route path="/test" element={<Test/>}></Route>
+        <Route path="/instructions" element={<Instructions/>}></Route>
+        <Route path="/intro" element={<Intro/>}></Route>
+        <Route path="/previous-scores" element={<PreviousScores/>}></Route>
         
       </Routes>
     </Router>

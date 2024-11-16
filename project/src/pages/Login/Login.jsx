@@ -69,6 +69,8 @@ function Login() {
   };
 
   return (
+    <>
+    <div><Navbar/></div>
     <div className="min-h-screen flex justify-center items-center ">
   <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-sm border-2 border-black-200">
     <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Welcome Back</h2>
@@ -125,6 +127,9 @@ function Login() {
     </div>
   </div>
 </div>
+    
+    </>
+    
 
   );
 }

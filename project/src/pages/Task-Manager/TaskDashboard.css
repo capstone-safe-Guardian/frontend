@@ -1,0 +1,292 @@
+/* TaskDashboard.css */
+
+.task-dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 0 50px;
+}
+
+.task-dashboard-header h1 {
+    padding-top: 20px;
+    color: #333;
+    margin: 0;
+    flex-grow: 1;
+    border-bottom: none;
+}
+
+.notification-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.notification-icon {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff4081;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+
+.notification-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-height: 400px; /* Set a maximum height for the dropdown */
+    overflow-y: auto; /* Enable vertical scrolling */
+    z-index: 1000;
+    padding: 0; /* Ensure there's no padding affecting height */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Adjust the notification-item style for better spacing */
+.notification-item {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+/* Optional: Adjust the styling of the scrollbar for better aesthetics */
+.notification-dropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+.notification-dropdown::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.notification-dropdown::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+
+.clear-notifications-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: 45a049;
+    border: none;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clear-notifications-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-input input,
+.task-input select,
+.task-input button {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+.task-input button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-grow: 0;
+}
+
+.task-input button:hover {
+    background-color: #45a049;
+}
+
+.task-lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.task-list {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 14px);
+    flex-grow: 1;
+    max-width: calc(33.33% - 14px);
+}
+
+.task-list h2 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.task-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s;
+}
+
+.task-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.task-actions button,
+.task-actions select,
+.task-actions input[type="datetime-local"] {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 36px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.task-actions button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.task-actions button:hover {
+    background-color: #45a049;
+}
+
+.task-actions .delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.task-actions .delete-button:hover {
+    background-color: #e53935;
+}
+
+.task-actions input[type="datetime-local"] {
+    width: auto;
+    min-width: 200px;
+}
+
+.reminder-icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: white;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.alert:hover {
+    opacity: 1;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+}
+
+.alert.error {
+    background-color: #f44336;
+}
+
+.alert.info {
+    background-color: #2196F3;
+}
+
+.task-edit {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.task-edit input {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.task-edit button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.task-edit button:hover {
+    background-color: #45a049;
+}

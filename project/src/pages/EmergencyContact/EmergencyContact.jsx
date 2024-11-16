@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { Link, Navigate, useNavigate, useNavigation } from "react-router-dom";
+import Navbar from "../../components/Navbar/Navbar";
 // import { navigate } from 'react-router-dom'; // Assuming you're using react-router
 
 
@@ -115,6 +116,7 @@ function EmergencyContact() {
 
   return (
     <>
+    <div><Navbar/></div>
       <div className="min-h-screen flex justify-center items-center">
         <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-xl">
           <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">
