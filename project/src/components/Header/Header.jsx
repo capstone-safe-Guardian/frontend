@@ -55,6 +55,12 @@ function Header() {
           >
             Mental-Wellbeing
           </Link>
+          <Link
+            to="/recomendations"
+            className="header-link text-white font-medium text-lg hover:text-yellow-400 transition-all duration-300 transform hover:translate-y-[-2px]"
+          >
+            Recommendations
+          </Link>
 
           {/* Logout Button */}
           <Link

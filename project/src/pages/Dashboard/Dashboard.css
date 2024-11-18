@@ -1,0 +1,50 @@
+.app-container {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  
+  .category-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .category-label:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-input {
+    display: none;
+  }
+  
+  .category-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .category-input:checked + .category-text {
+    color: #007bff;
+  }

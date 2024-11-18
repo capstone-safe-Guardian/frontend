@@ -185,8 +185,11 @@ const MoodTracker = () => {
         </div>
       </div>
       <div className="form-container">
-        <TextField
-          label="Journal Entry"
+      <TextField
+          label="Share what's making you feel this way..."
+          placeholder={mood <= 4 ? "What's bringing you down today?" : 
+                      mood >= 7 ? "What's making you feel so good?" :
+                      "Your feelings matter. Express freely what led to your current mood."}
           multiline
           rows={4}
           variant="outlined"
@@ -194,6 +197,7 @@ const MoodTracker = () => {
           value={journalEntry}
           onChange={(e) => setJournalEntry(e.target.value)}
           sx={{ marginBottom: "15px" }}
+          //helperText="Your feelings matter. Express freely what led to your current mood."
         />
         <div className="numeric-inputs">
           <TextField

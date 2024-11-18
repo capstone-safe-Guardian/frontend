@@ -16,6 +16,7 @@ import Test from './pages/Test/Test';
 import Instructions from './pages/Instructions/Instrucions';
 import Intro from './pages/Intro/Intro';
 import PreviousScores from './pages/Intro/PreviousScores';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
         <Route path="/instructions" element={<Instructions/>}></Route>
         <Route path="/intro" element={<Intro/>}></Route>
         <Route path="/previous-scores" element={<PreviousScores/>}></Route>
-        
+        <Route path="/recomendations" element={<Dashboard/>}></Route>
       </Routes>
     </Router>
   );
