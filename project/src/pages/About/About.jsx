@@ -1,42 +1,41 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import './About.css'; // Importing the same CSS file
 
 function About() {
   return (
-    <div className="about-page">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-yellow-50">
       <Navbar />
-      <div className="about-container">
-        <h1 className="about-title">About Safe Guardian</h1>
-        <div className="about-content">
-          <section className="about-section fade-in">
-            <h2>Our Mission</h2>
-            <p>
+      <div className="container mx-auto px-4 py-12">
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">About Safe Guardian</h1>
+        <div className="grid grid-cols-3 gap-8 m-auto">
+          <section className="bg-white shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105">
+            <h2 className="text-2xl font-semibold text-blue-600 mb-4">Our Mission</h2>
+            <p className="text-gray-700">
               Safe Guardian is dedicated to empowering individuals to live safer, healthier lives. Our mission is to provide innovative solutions that enhance personal safety and well-being, ensuring peace of mind for our users and their loved ones.
             </p>
           </section>
-          <section className="about-section fade-in">
-            <h2>Our Vision</h2>
-            <p>
-              We envision a world where everyone feels secure and confident in their daily lives, supported by cutting-edge technology and compassionate care. Safe Guardian strives to be at the forefront of personal safety and wellness, constantly innovating to meet the evolving needs of our community.
+          
+          <section className="bg-white shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105">
+            <h2 className="text-2xl font-semibold text-blue-600 mb-4">Our Vision</h2>
+            <p className="text-gray-700">
+              We envision a world where everyone feels secure and confident in their daily lives, supported by cutting-edge technology and compassionate care. Safe Guardian strives to be at the forefront of personal safety and wellness.
             </p>
           </section>
-          <section className="about-section fade-in">
-            <h2>Our Values</h2>
-            <ul className="values-list">
-              <li>
-                <span className="value-icon">🛡️</span>
-                We prioritize the safety and security of our users above all else.
-              </li>
-              <li>
-                <span className="value-icon">💡</span>
-                We continuously strive to develop new and improved ways to protect and support our community.
-              </li>
-              <li>
-                <span className="value-icon">💪</span>
-                We believe in giving people the tools and knowledge they need to take control of their own safety and well-being.
-              </li>
+          
+          <section className="bg-white shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105">
+            <h2 className="text-2xl font-semibold text-blue-600 mb-4">Our Values</h2>
+            <ul className="space-y-3">
+              {[
+                { icon: '🛡️', text: 'Prioritize user safety and security' },
+                { icon: '💡', text: 'Continuously develop innovative protection methods' },
+                { icon: '💪', text: 'Empower users with safety tools and knowledge' }
+              ].map((value, index) => (
+                <li key={index} className="flex items-center text-gray-700">
+                  <span className="mr-3 text-xl">{value.icon}</span>
+                  {value.text}
+                </li>
+              ))}
             </ul>
           </section>
         </div>
@@ -46,4 +45,4 @@ function About() {
   );
 }
 
-export default About;
+export default About; 

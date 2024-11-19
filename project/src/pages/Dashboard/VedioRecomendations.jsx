@@ -32,7 +32,7 @@ function VideoRecommendations() {
 
     return (
         <div>
-            <h1>YouTube Video Recommendations</h1>
+            <h1 className='my-4'>YouTube Video Recommendations</h1>
             <div className="checkbox-container">
                 {categories.map(category => (
                     <label key={category}>

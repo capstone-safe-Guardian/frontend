@@ -10,7 +10,7 @@ function Footer() {
       <div className="footer-content container mx-auto px-6 md:px-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
         {/* Footer Brand */}
         <div className="footer-brand space-y-2">
-          <h3 className="text-2xl font-bold">Safe Gaurdian</h3>
+          <h3 className="text-2xl font-bold text-start">Safe Gaurdian</h3>
           <p className="text-gray-400">Empowering you to live safer and healthier</p>
         </div>
 
@@ -21,8 +21,8 @@ function Footer() {
             <li><Link to="/" className="text-gray-400 hover:text-white transition duration-300">Home</Link></li>
             <li><Link to="/about" className="text-gray-400 hover:text-white transition duration-300">About</Link></li>
             <li><Link to="/services" className="text-gray-400 hover:text-white transition duration-300">Services</Link></li>
-            <li><Link to="/login" className="text-gray-400 hover:text-white transition duration-300">Login</Link></li>
-            <li><Link to="/register" className="text-gray-400 hover:text-white transition duration-300">Register</Link></li>
+            {/* <li><Link to="/login" className="text-gray-400 hover:text-white transition duration-300">Login</Link></li>
+            <li><Link to="/register" className="text-gray-400 hover:text-white transition duration-300">Register</Link></li> */}
           </ul>
         </div>
 
